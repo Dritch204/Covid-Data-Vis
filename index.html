@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>D3 Dashboard</title>
+    <style>
+        p {
+            margin: 0 0 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="text-align: center;">
+
+        <h2>CORONAVIRUS GLOBAL DATA VISUALISATION</h2>
+
+        <h2 id="time"></h2>
+
+        <div style="display: flex;flex-direction: row; justify-content: center;text-align: left;">
+            <div style="margin-left: 20px;">
+                <h3>CONFIRMED</h3>
+                <h2 style="color: #fa0606;" id="confirmed">-</h2>
+            </div>
+            <div style="margin-left: 20px;">
+                <h3>RECOVERED</h3>
+                <h2 style="color: #2aa649;" id="recovered">-</h2>
+            </div>
+            <div style="margin-left: 20px;">
+                <h3>DEAD</h3>
+                <h2 style="color: #5a5a5a;" id="deaths">-</h2>
+            </div>
+        </div>
+
+        <div id="map"></div>
+
+        <div style="margin-top: 150px;">Source of data: <a href="https://github.com/CSSEGISandData/COVID-19">JHU CSSE
+                COVID-19 Data</a></div>
+
+    </div>
+
+</body>
+
+<!-- Load momemt js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<!-- WorldMap   -->
+<script src="tooltip.js"></script>
+<script src="main.js"></script>
+
+</html>
